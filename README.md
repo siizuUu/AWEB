@@ -4,4 +4,4 @@ Proyecto de WEB
               Alfonso "eskere" guti;
               Óscar "CHEPAS" Perdiz;
               Aarón "canserbero" Boullosa;
-              Algún gilipollas mas.
+              Algún gilipollas más.
