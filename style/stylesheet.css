@@ -1,0 +1,16 @@
+/*
+    Autores:
+        Óscar "CHEPAS" Perdiz; 
+        Alfonso "eskere" guti; 
+        Aarón "canserbero" Boullosa;
+*/
+@font-face {
+    font-family: "xirod";
+    src: url('../fonts/xirod.ttf') 
+    format('TrueType')
+    }
+
+* {
+    font-family: xirod;
+    color: blueviolet;
+}
