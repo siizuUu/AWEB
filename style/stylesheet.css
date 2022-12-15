@@ -4,6 +4,8 @@
         Alfonso "eskere" guti; 
         Aarón "canserbero" Boullosa;
 */
+
+/*FUENTES*/
 @font-face {
     font-family: "xirod";
     src: url('../fonts/xirod.ttf') 
@@ -15,7 +17,7 @@
     src: url('../fonts/GTrD.otf') 
     format('OpenType')
     }
-    
+/*ETIQUETAS*/  
 * {
     font-family: goodtimes;
     color: #2e5e40;
@@ -24,6 +26,7 @@ h1 {
     color: #3cff00;
     font-family: xirod;
 }
+/*HEADER*/
 div.inicio {
     margin: 20px auto;
     background-color: #1e491e;
@@ -36,4 +39,16 @@ div.inicio {
 div.inicio img.izquierda {
     float: left;
     margin-right: 15px;
+}
+
+#div-cookies {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px -5px 15px gray;
+    padding: 7px;
+    text-align: center;
+    z-index: 99;
 }
