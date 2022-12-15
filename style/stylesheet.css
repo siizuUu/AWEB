@@ -10,13 +10,23 @@
     format('TrueType')
     }
 
+@font-face {
+    font-family: "goodtimes";
+    src: url('../fonts/GTrD.otf') 
+    format('OpenType')
+    }
+    
 * {
+    font-family: goodtimes;
+    color: #2e5e40;
+}
+h1 {
+    color: #3cff00;
     font-family: xirod;
-    color: rgb(60, 255, 0);
 }
 div.inicio {
     margin: 20px auto;
-    background-color: #2e5e40;
+    background-color: #1e491e;
     color: #000000;
     padding: 10px 20px;
     border-radius:5px;
