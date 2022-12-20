@@ -1,7 +1,6 @@
 # AWEB
 Proyecto de WEB
   Integrantes:
-              Alfonso "eskere" guti;
+              Alfonso "eskere" Gutierrez;
               Óscar "CHEPAS" Perdiz;
               Aarón "canserbero" Boullosa;
-              Algún gilipollas más.
