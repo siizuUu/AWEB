@@ -8,6 +8,12 @@
     --color-footer: #151515;
 }
 
+@font-face {
+    font-family: "xirod";
+    src: url('../fonts/xirod.ttf') 
+    format('TrueType')
+    }
+
 *,::after, ::before{
     box-sizing: border-box;
 }
@@ -18,9 +24,32 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: xirod ;
 }
+/*=================================
+    ESTILOS: MODO
+==================================*/
+.elemento {
+    background-color: #ffffff;
+    color: #151515;
+  }
 
+  .elemento.oscuro {
+    background-color: #151515;
+    color: aliceblue;
+  }
+/*  .tema {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: blue;
+color: white;
+font-size: 16px;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+}
+*/
 .hm-wrapper{
     position: relative;
 }

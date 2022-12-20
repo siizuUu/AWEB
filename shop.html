@@ -7,14 +7,9 @@
     <!-- ICONS: Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-
-
-    <!-- Mis Estilos -->
     <link rel="stylesheet" href="style/estilos.css">
-
 </head>
-<body>
-
+<body id="elemento" class="elemento">     
     <div class="hm-wrapper">
 
         <!-- =================================
@@ -39,7 +34,6 @@
                             <li><a href="http://">Contacto</a></li>
                         </ul>
 
-
                         <div class="hm-icon-cart">
                             <a href="#">
                                 <i class="las la-shopping-cart"></i>
@@ -52,7 +46,13 @@
                                 <i class="fas fa-bars"></i>
                             </button>
                         </div>
-
+                        <button class="tema" onclick="cambiarClase()">Cambiar modo</button>      
+                        <script>
+                          function cambiarClase() {
+                            var elemento = document.getElementById('elemento');
+                            elemento.classList.toggle('oscuro');
+                          }
+                        </script>
                     </nav>
 
                 </div>
@@ -405,19 +405,11 @@
                                 </div>
                                 <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
-
-
          <!-- =================================
            FOOTER
         ================================== -->
