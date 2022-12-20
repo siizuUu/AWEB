@@ -22,7 +22,7 @@
 
                     <div class="hm-logo">
                         <a href="#">
-                            <img src="img/Simbolo_Canada.png" alt="" class="logo">
+                            <img src="img/logo_AWEB.png" alt="" class="logo">
                         </a>
                     </div>
 
@@ -40,17 +40,13 @@
                                 <span>0</span>
                             </a>
                         </div>
-
-                        <div class="icon-menu">
-                            <button type="button">
-                                <i class="fas fa-bars"></i>
-                            </button>
-                        </div>
-                        <button class="tema" onclick="cambiarClase()">Cambiar modo</button>      
+                            <button class="tema" onclick="cambiarClase()">Cambiar modo</button>      
                         <script>
                           function cambiarClase() {
                             var elemento = document.getElementById('elemento');
+                            var elemento2 = document.getElementById('elemento2');
                             elemento.classList.toggle('oscuro');
+                            elemento2.classList.toggle('oscuro2');
                           }
                         </script>
                     </nav>
@@ -168,7 +164,7 @@
                 </ul>
 
                 <!-- CONTENIDO DE LOS TABS -->
-                <!-- Zapatillas -->
+                <!-- KUSH -->
                 <div class="tabs-content">
 
                     <div class="grid-product">
@@ -182,7 +178,7 @@
                             </div>
 
                             <div class="p-info">
-                               <a href=""> <h3>Quisque vulputate aliquam</h3></a>
+                                <h3>Quisque vulputate aliquam</h3>
                                 <div class="precio">
                                     <span>S/ 00.00</span>
                                 </div>
@@ -199,7 +195,7 @@
                             </div>
 
                             <div class="p-info">
-                               <a href=""> <h3>Praesent nibh lorem, tempus quis est a</h3></a>
+                               <h3>Praesent nibh lorem, tempus quis est a</h3>
                                 <div class="precio">
                                     <span>S/ 00.00</span>
                                 </div>
@@ -216,7 +212,7 @@
                             </div>
 
                             <div class="p-info">
-                               <a href=""> <h3>Nunc sit amet justo nec ipsum dolor.</h3></a>
+                               <h3>Nunc sit amet justo nec ipsum dolor.</h3>
                                 <div class="precio">
                                     <span>S/ 00.00</span>
                                 </div>
@@ -234,7 +230,7 @@
                             </div>
 
                             <div class="p-info">
-                               <a href=""> <h3>Lorem ipsum dolor sit, amet consectetur</h3></a>
+                               <h3>Lorem ipsum dolor sit, amet consectetur</h3>
                                 <div class="precio">
                                     <span>S/ 00.00</span>
                                 </div>
@@ -261,7 +257,7 @@
                             </div>
 
                             <div class="p-info">
-                               <a href=""> <h3>Quisque vulputate aliquam</h3></a>
+                               <h3>Quisque vulputate aliquam</h3>
                                 <div class="precio">
                                     <span>S/ 00.00</span>
                                 </div>
@@ -279,7 +275,7 @@
                             </div>
 
                             <div class="p-info">
-                               <a href=""> <h3>Praesent nibh lorem, tempus quis est a</h3></a>
+                               <h3>Praesent nibh lorem, tempus quis est a</h3>
                                 <div class="precio">
                                     <span>S/ 00.00</span>
                                 </div>
@@ -296,7 +292,7 @@
                             </div>
 
                             <div class="p-info">
-                               <a href=""> <h3>Nunc sit amet justo nec ipsum dolor.</h3></a>
+                               <h3>Nunc sit amet justo nec ipsum dolor.</h3>
                                 <div class="precio">
                                     <span>S/ 00.00</span>
                                 </div>
@@ -313,7 +309,7 @@
                             </div>
 
                             <div class="p-info">
-                               <a href=""> <h3>Lorem ipsum dolor sit, amet consectetur</h3></a>
+                               <h3>Lorem ipsum dolor sit, amet consectetur</h3>
                                 <div class="precio">
                                     <span>S/ 00.00</span>
                                 </div>
@@ -327,6 +323,7 @@
                 </div>
 
                 <!-- En oferta -->
+                <div class="elementos">
                 <div class="tabs-content" data-aos="fade-up">
 
                     <div class="grid-product">
@@ -340,7 +337,7 @@
                             </div>
 
                             <div class="p-info">
-                               <a href=""> <h3>Quisque vulputate aliquam</h3></a>
+                               <h3>Quisque vulputate aliquam</h3>
                                 <div class="precio">
                                     <span>S/ 00.00</span>
                                     <span class="thash">S/ 00.00</span>
@@ -359,7 +356,7 @@
                             </div>
 
                             <div class="p-info">
-                               <a href=""> <h3>Praesent nibh lorem, tempus quis est a</h3></a>
+                               <h3>Praesent nibh lorem, tempus quis est a</h3>
                                 <div class="precio">
                                     <span>S/ 00.00</span>
                                     <span class="thash">S/ 00.00</span>
@@ -378,7 +375,7 @@
                             </div>
 
                             <div class="p-info">
-                               <a href=""> <h3>Nunc sit amet justo nec ipsum dolor.</h3></a>
+                               <h3>Nunc sit amet justo nec ipsum dolor.</h3>
                                 <div class="precio">
                                     <span>S/ 00.00</span>
 
@@ -398,13 +395,14 @@
                             </div>
 
                             <div class="p-info">
-                               <a href=""> <h3>Lorem ipsum dolor sit, amet consectetur</h3></a>
+                               <h3>Lorem ipsum dolor sit, amet consectetur</h3>
                                 <div class="precio">
                                     <span>S/ 00.00</span>
                                     <span class="thash">S/ 00.00</span>
                                 </div>
                                 <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -413,6 +411,7 @@
          <!-- =================================
            FOOTER
         ================================== -->
+        <hr style="border-top: 5px solid;">
         <footer>
             
             <div class="container">

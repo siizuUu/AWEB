@@ -1,11 +1,11 @@
 
 :root{
-    --color-principal: #1eff00;
+    --color-principal: #04A75B;
     --color-primary-hover:#1eff00;
-    --color-verde:#04A75B;
-    --color-negro: #444A47;
-    --color-fondo: #F7F9FD;
-    --color-footer: #151515;
+    --color-verde:#000000;
+    --color-negro: #151515;
+  /*  --color-fondo: #F7F9FD;
+    --color-footer: #151515;*/
 }
 
 @font-face {
@@ -19,37 +19,31 @@
 }
 
 *{
+    font-family: xirod ;
     padding: 0px;
     margin: 0;
 }
 
 body{
-    font-family: xirod ;
 }
 /*=================================
     ESTILOS: MODO
 ==================================*/
+
 .elemento {
-    background-color: #ffffff;
+    background-color: #fefefe;
     color: #151515;
+    
   }
 
   .elemento.oscuro {
     background-color: #151515;
-    color: aliceblue;
+    color: #efefef;
   }
-/*  .tema {
-position: fixed;
-bottom: 20px;
-right: 20px;
-background-color: blue;
-color: white;
-font-size: 16px;
-padding: 10px 20px;
-border: none;
-cursor: pointer;
-}
-*/
+
+
+
+
 .hm-wrapper{
     position: relative;
 }
@@ -95,10 +89,6 @@ img{
     }
 }
 
-.uppercase{
-
-    text-transform: uppercase !important;
-}
 
 /*=================================
     ESTILOS: Botones
@@ -141,7 +131,6 @@ img{
 .hm-header{
     position: relative;
     height: 64px;
-    background: #fff;
     line-height: 64px;
     -webkit-transition: all .6s ease-in-out;
     -moz-transition: all .6s ease-in-out;
@@ -188,7 +177,6 @@ img{
 }
 
 .hm-menu ul li a{
-    color: var(--color-negro);
     font-size: 15px;
     margin-right: 30px;
     display: inline-block;
@@ -263,7 +251,6 @@ img{
 }
 
 .header-title h1{
-    color: var(--color-negro);
     position: relative;
     text-align: center;
     font-size: 30px;
@@ -335,7 +322,7 @@ img{
 
 
 /*=================================
-    ESTILOS: Productos destacados
+    ESTILOS: Productos populares
 ==================================*/
 
 .hm-tabs{
@@ -348,7 +335,6 @@ img{
 
 .hm-tabs .hm-tab-link{
     margin: 0px 20px;
-    background: #fff;
     border:1px solid #EEF5F9;
     padding: 10px 30px;
     border-radius: 22px;
@@ -360,7 +346,6 @@ img{
 .hm-tabs .hm-tab-link.active,
 .hm-tabs .hm-tab-link:hover{
     background: var(--color-principal);
-    color: #fff;
 }
 
 .hm-tabs .hm-tab-link.active .tabs-content{
@@ -378,7 +363,6 @@ img{
 
 .grid-product .product-item{
     overflow: hidden;
-    background: #fff;
     border:1px solid #EEF5F9;
     border-radius: 5px;
     
@@ -428,7 +412,6 @@ img{
 .grid-product .product-item .p-info h3{
     font-size: 18px;
     font-weight: 600;
-    color: var(--color-negro);
     line-height: 26px;
     margin-bottom: 16px;
 }
@@ -442,7 +425,6 @@ img{
 .grid-product .product-item .p-info .precio span{
     font-size: 24px;
     font-weight: 700;
-    color: var(--color-negro);
 
 }
 
@@ -450,7 +432,6 @@ img{
     font-size: 16px;
     font-weight: 400;
     margin-left: 10px;
-    color: #A7A7A7;
     text-decoration: line-through;
 }
 
@@ -462,9 +443,10 @@ img{
     ESTILOS: Footer
 ==================================*/
 
-footer{
+footer {
     background: #151515;
     padding: 80px 0px;
+    color: #E3E3E3;
 }
 
 footer .foo-row{
@@ -562,7 +544,7 @@ footer .foo-row .foo-col ul li a:hover{
 
 
 /*=================================
-    ESTILOS: RESPOIVE
+    ESTILOS: RESPONSIVE
 ==================================*/
 @media screen and (max-width: 1024px){
     .grid-product{
