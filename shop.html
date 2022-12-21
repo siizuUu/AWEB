@@ -28,26 +28,25 @@
 
                     <nav class="hm-menu">
                         <ul>
-                            <li><a href="http://">Productos</a></li>
-                            <li><a href="http://">Campañas</a></li>
-                            <li><a href="http://">Nosotros</a></li>
-                            <li><a href="http://">Contacto</a></li>
+                            <li><a href="http://192.168.0.1">Productos</a></li>
+                            <li><a href="http://192.168.1.1">Campañas</a></li>
+                            <li><a href="http://192.168.5.1">Nosotros</a></li>
+                            <li><a href="http://192.168.0.11">Contacto</a></li>
                         </ul>
 
                         <div class="hm-icon-cart">
-                            <a href="#">
+                            <a class="elemento" href="#">
                                 <i class="las la-shopping-cart"></i>
                                 <span>0</span>
                             </a>
                         </div>
                             <button class="tema" onclick="cambiarClase()">Cambiar modo</button>      
                         <script>
-                          function cambiarClase() {
+                            function cambiarClase() {
                             var elemento = document.getElementById('elemento');
-                            var elemento2 = document.getElementById('elemento2');
+                            var elemento2 = document.getElementById('')
                             elemento.classList.toggle('oscuro');
-                            elemento2.classList.toggle('oscuro2');
-                          }
+                            }
                         </script>
                     </nav>
 
