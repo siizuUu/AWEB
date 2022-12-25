@@ -1,8 +1,8 @@
 
 :root{
     --color-principal: #04A75B;
-    --color-primary-hover:#1eff00;
-    --color-verde:#000000;
+    --color-principal-hover: #1eff00;
+    --color-verde: #000000;
     --color-negro: #151515;
     --color-fondo: #F7F9FD;
     --color-footer: #151515;
@@ -24,21 +24,26 @@
     margin: 0;
 }
 
-body{
-}
 /*=================================
     ESTILOS: MODO
 ==================================*/
-
+.tema {
+    display: inline-block;
+    padding:0px 16px;
+	border:1px solid var(--color-principal-hover);
+    border-radius:5px;
+	color:#ffffff;
+	background-color:var(--color-principal);
+}
 .elemento {
-    background-color: #fefefe;
-    color: #151515;
+    color: #fefefe;
+    background: #151515;
     
   }
 
   .elemento.oscuro {
-    background-color: #151515;
-    color: #efefef;
+    color: #151515;
+    background: #ffffff;
   }
 
 
@@ -71,10 +76,6 @@ img{
     border-style: none;
 }
 
-.bg-fondo{
-    background
-}
-
 .container{
     width: 1122px;
     padding: 0 15px;
@@ -97,7 +98,6 @@ img{
     display: inline-block;
     position: relative;
     padding: 12px 25px;
-    background: transparent;
     border: none;
     cursor: pointer;
     font-size: 14px;
@@ -113,7 +113,7 @@ img{
 }
 
 .btn-primary:hover{
-    background: var(--color-primary-hover);
+    background: var(--color-principal-hover);
 }
 
 
@@ -129,15 +129,13 @@ img{
 
 .hm-header{
     position: relative;
-    height: 64px;
+    height: 100px;
     line-height: 64px;
     -webkit-transition: all .6s ease-in-out;
     -moz-transition: all .6s ease-in-out;
     -ms-transition: all .6s ease-in-out;
     -o-transition: all .6s ease-in-out;
     transition: all .6s ease-in-out;
-    margin-top: 20px;
-    margin-bottom: 20px;
     box-sizing: border-box;
 }
 .hm-header .container{
@@ -153,6 +151,7 @@ img{
     z-index: 99;
     margin-top: 0px;
     margin-bottom: 0px;
+    background: #808080;
 }
 
 .header-menu{
@@ -179,10 +178,11 @@ img{
     font-size: 15px;
     margin-right: 30px;
     display: inline-block;
+    color: var(--color-principal);
 }
 
 .hm-menu ul li a:hover{
-    color: var(--color-principal);
+    color: var(--color-principal-hover);
 }
 
 .hm-menu .hm-icon-cart{
@@ -191,7 +191,7 @@ img{
 
 .hm-menu .hm-icon-cart a{
     font-size: 33px;
-    color: var(--color-negro);
+    color: var(--color-blanco);
     position: relative;
 }
 
@@ -334,17 +334,18 @@ img{
 
 .hm-tabs .hm-tab-link{
     margin: 0px 20px;
-    border:1px solid #EEF5F9;
+    border:1px solid;
     padding: 10px 30px;
     border-radius: 22px;
-    color: #7C807E;
     cursor: pointer;
     transition: all .3s;
 }
 
-.hm-tabs .hm-tab-link.active,
-.hm-tabs .hm-tab-link:hover{
+.hm-tabs .hm-tab-link.active{
     background: var(--color-principal);
+}
+.hm-tabs .hm-tab-link:hover{
+    background: var(--color-principal-hover);
 }
 
 .hm-tabs .hm-tab-link.active .tabs-content{
@@ -362,7 +363,7 @@ img{
 
 .grid-product .product-item{
     overflow: hidden;
-    border:1px solid #EEF5F9;
+    border:2px solid #EEF5F9;
     border-radius: 5px;
     
 }
@@ -466,7 +467,7 @@ footer .foo-row .foo-col:first-child{
 }
 
 footer .foo-row .foo-col h2{
-    color: #E3E3E3;
+    color: var(--color-principal) ;
     line-height: 40px;
 
     font-size: 33px;
@@ -489,7 +490,7 @@ footer form .f-input input{
     font-size: 15px;
     border-radius: 25px;
     outline: 0;
-    color: #A7A1A1;
+    color: var(--color-principal);
 }
 
 footer form .f-input .hm-btn-round{
@@ -518,12 +519,12 @@ footer .foo-row .foo-col ul li{
 }
 
 footer .foo-row .foo-col ul li a{
-    color: #E3E3E3;
+    color: var(--color-principal);
     font-size: 15px;
 }
 
 footer .foo-row .foo-col ul li a:hover{
-    color: var(--color-principal);
+    color: var(--color-principal-hover);
     text-decoration: underline;
 }
 
@@ -535,7 +536,7 @@ footer .foo-row .foo-col ul li a:hover{
 
 .foo-copy p{
     text-align: center;
-    color: #E3E3E3;
+    color: var(--color-principal);
     font-size: 14px;
     font-weight: 300;
 }
@@ -581,10 +582,8 @@ footer .foo-row .foo-col ul li a:hover{
     }
 
     .hm-header .icon-menu button{
-        background: transparent;
         border: none;
         font-size: 22px;
-        color: var(--color-negro);
     }
 
     footer .foo-row{
